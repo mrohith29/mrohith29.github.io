@@ -3,7 +3,46 @@
 
 <head>
     <title>Mariyala Rohith webfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        body {
+            background-color: #e5e5a3;
+            font-family: Arial, sans-serif;
+        }
+
+        #photo {
+            border-radius: 50%;
+            text-align: right;
+            /*padding: 10px;*/
+            width: 100%;
+            height: 100%;
+            /*float: right;*/
+            /*border-bottom-style: hidden;*/
+            }
+
+        h1 {
+            text-align: center;
+            color: #4d4d00;
+        }
+
+        .project-details {
+            display: block;
+        }
+    </style>
+
+
+    <script>
+        function toggleProjectDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -68,7 +107,8 @@
         <h1>Projects</h1>
         <p>My projects are made using multiple programming and scripting languages</p>
         <div id="p1">
-            <h2>Voting System</h2>
+            <h2 onclick="toggleProjectDetails('p1-datails')">Voting System</h2>
+            <div id="p1-details" class="project-details">
             <h3>Skills</h3>
             <li>C</li>
             <h3>Description</h3>
@@ -83,10 +123,12 @@
                 loops.
             </p>
             <p>Here is the source <a href="https://github.com/mrohith29/voting-system">Code</a> for it</p>
+            </div>
         </div>
 
         <div id="p2">
-            <h2>Task Manager</h2>
+            <h2 onclick="toggleProjectDetails('p2-datails')">Task Manager</h2>
+            <div id="p2-details" class="project-details">
             <h3>Skills</h3>
             <li>C(data structures)</li>
             <h3>Description</h3>
@@ -99,10 +141,12 @@
                 linked lists.
             </p>
             <p>Here is the source <a href="https://github.com/mrohith29/DS-project">Code</a> for it</p>
+            </div>
         </div>
 
         <div id="p3">
-            <h2>Matrix Operations Using Threads</h2>
+            <h2 onclick="toggleProjectDetails('p3-details')">Matrix Operations Using Threads</h2>
+            <div id="p3-details" class="project-details">
             <h3>Skills</h3>
             <li>Java</li>
             <h3>Description</h3>
@@ -118,9 +162,11 @@
             <p>Here is the source <a
                     href="https://github.com/mrohith29/Matrix-Operations-with-Threads/tree/master">Code</a> for it</p>
         </div>
+        </div>
 
         <div id="p4">
-            <h2>JS clock</h2>
+            <h2 onclick="toggleProjectDescription('p4-details')">JS clock</h2>
+            <div id="p4-details" class="project-details">
             <h3>Skills</h3>
             <li>HTML</li>
             <li>CSS</li>
@@ -137,9 +183,11 @@
             <p>Here is the source <a href="https://github.com/mrohith29/JS-clock">Code</a> for it</p>
             <p>Deployed version can be seen <a href="https://rohithmariyala.me/JS-clock/">here</a></p>
         </div>
+        </div>
 
         <div id="p5">
-            <h2>Covid19 analysis</h2>
+            <h2 onclick="toggleProjectDetails('p5-details')">Covid19 analysis</h2>
+            <div id="p5-details" class="project-details">
             <h3>Skills</h3>
             <li>R</li>
             <h3>Description</h3>
@@ -153,9 +201,11 @@
             </p>
             <p>Here is the source <a href="https://github.com/mrohith29/Covid19-Analysis">Code</a> for it</p>
         </div>
+        </div>
 
         <div id="p6">
-            <h2>Web Mode Switcher</h2>
+            <h2 onclick="toggleProjectDetails('p6-details')">Web Mode Switcher</h2>
+            <div id="p6-details" class="project-details">
             <h3>Skills</h3>
             <li>HTML</li>
             <li>CSS</li>
@@ -174,9 +224,11 @@
 
             <p>Deployed version can be seen <a href="https://rohithmariyala.me/Web-mode-Switcher/">here</a></p>
         </div>
+        </div>
 
         <div id="p7">
-            <h2>ListRevFunctions</h2>
+            <h2 onclick="toggleProjectDetails('p7-details')">ListRevFunctions</h2>
+            <div id="p7-details" class="project-details">
             <h3>Skills</h3>
             <li>Python</li>
 
@@ -195,9 +247,11 @@
 
             <p>You can see the published version <a href="https://pypi.org/project/ListRevFunctions/">here</a> </p>
         </div>
+        </div>
 
         <div id="p8">
-            <h2>copyfolder</h2>
+            <h2 onclick="toggleProjectDetails('p8-details')">copyfolder</h2>
+            <div id="p8-details" class="project-details">
             <h3>Skills</h3>
             <li>Python</li>
 
@@ -215,6 +269,7 @@
             <p>Here is the source <a href="https://github.com/mrohith29/copyfolder">Code</a> for it</p>
 
             <p>You can see the published version <a href="https://test.pypi.org/project/copyfolder/">here</a></p>
+        </div>
         </div>
     </div>
 </body>
