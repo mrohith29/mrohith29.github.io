@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<style>
+    #photo>img {
+        border-radius: 50%;
+        text-align: right;
+        width: 20%;
+        height: 100%;
+        padding-right: 0%;
+        float: right;
+    }
+
+
+    h2 {
+        margin-top: 0;
+        color: #444;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        padding: 5px 0;
+    }
+
+    #tabs {
+        display: flex;
+        margin-top: 0;
+        right: 0;
+    }
+</style>
+
+
+
+<div id="photo">
+    <img src="{{url_for('static', filename='profilepic.jpg')}}">
+</div>
+
+
+
+<div id="Introduction">
+    <h1>Introduction</h1>
+    <p>
+
+</div>
+
+
+
+
+
+</html>
+{% endblock %}
