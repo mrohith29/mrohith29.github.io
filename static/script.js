@@ -1,8 +1,5 @@
 let myJson = {
         "name": "Mariyala Rohith",
-        "mail-id": "mariyalarohith29@gmail.com",
-        "website": "https://rohithmariyala.me",
-        "age": 19
 }
 
 // JSON.parse(myJson)
